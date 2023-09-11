@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 51px 92px;
+    padding: 92px 49px 92px 51px;;
   }
 
   .header__logo {
@@ -16,24 +16,30 @@
   }
   
   .header__logo-image {
-      width: 100%;
+    width: 100%; 
   }
 
   .header__menu-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   /* позиционирование списка в строчку */
+    justify-content: space-around;
     gap: 12px;
-    list-style: circle;
+    list-style: circle;    /* особый стиль маркеров */
+    /* padding: 43px 209px 45px 0; */
 }
 
-.header__menu-link {
-    color: #000;
-    font-size: 18px;
+.header__menu-link {          
+    color: #000;         /* устанавливаем цвет */
+    font-size: 18px;       /* устанавливаем размер списка */
     /* line-height: 1.2; */
 }
 
-.header__menu-item_active .header__menu-link {
-    text-decoration: none;
+.header__menu-item_active {
+    list-style-type: none; /* Убираем маркер у кнопки ГЛАВНАЯ */
+}
+
+.header__menu-item_active .header__menu-link { /* вложенный стиль, для кнопки ГЛАВНАЯ*/
+    text-decoration: none; /* убираем стили для кнопки "главная"*/
 }
 
 .main-background {

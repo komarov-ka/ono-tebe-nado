@@ -24,9 +24,7 @@
 .header__menu-list {
     display: flex;
     flex-direction: row;   /* позиционирование списка в строчку */
-    list-style: circle;    /* особый стиль маркеров */
-    padding-bottom: 9px;
-    
+    list-style: circle;    /* особый стиль маркеров */   
 }
 
 .header__logo-image {      /* стили лого из макета */
@@ -41,6 +39,7 @@
     font-weight: 400;      /* устанавливаем жирность текста */
     margin-right: 32px;    /* устанавливаем растояние между словами */
     line-height: normal;
+    text-underline-offset: 3px;
 }
 
 .header__links-list-item_no-bullit {
@@ -52,7 +51,6 @@
     display: flex;
     justify-content: flex-end;
     width: calc((100% - 148px) / 2);
-    width: 240px;
     height: 97px;
     flex-shrink: 0;
 }

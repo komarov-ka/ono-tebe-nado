@@ -1,45 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 92px 49px 82px 51px;
+  }
+
 .content-section {
     width: 100%;
     margin: auto;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 92px 49px 92px 51px;;
-  }
-
-  .header__logo {
-    display: block;
-    width: 148px;
-  }
   
-  .header__logo-image {
-    width: 100%; 
+.header__menu {
+    display: flex;
+    justify-content: space-between; /* равномерное расположение элементов по горизонтали */
+    align-items: center;            /* расположение списка по вертикали по центру */
+    flex-direction: row;            /* расположение списка по в строчку*/
+    width: calc((100% - 148px) / 2);
   }
 
-  .header__menu-list {
+.header__menu-list {
     display: flex;
     flex-direction: row;   /* позиционирование списка в строчку */
-    justify-content: space-around;
-    gap: 12px;
     list-style: circle;    /* особый стиль маркеров */
-    /* padding: 43px 209px 45px 0; */
+    
 }
 
-.header__menu-link {          
-    color: #000;         /* устанавливаем цвет */
-    font-size: 18px;       /* устанавливаем размер списка */
-    /* line-height: 1.2; */
+.header__logo-image {
+    max-width: 148px;      /* максимальная ширина изображения */
+  }
+
+.header__links-list-item {          
+    color: #000;         /* устанавливаем цвет текста */
+    font-size: 18px;       /* устанавливаем размер текста */
+    font-weight: 400;      /* устанавливаем жирность текста */
+    margin-right: 32px;    /* устанавливаем растояние между словами */
 }
 
-.header__menu-item_active {
+.header__links-list-item_no-bullit {
     list-style-type: none; /* Убираем маркер у кнопки ГЛАВНАЯ */
+    text-decoration: none; /* убираем стили для кнопки "главная"*/
 }
 
-.header__menu-item_active .header__menu-link { /* вложенный стиль, для кнопки ГЛАВНАЯ*/
-    text-decoration: none; /* убираем стили для кнопки "главная"*/
+.address {
+    display: flex;
+    justify-content: flex-end;
+    width: calc((100% - 148px) / 2);
+    font-style: normal;
+}
+
+.header__address {
+    max-width: 240px;
 }
 
 .main-background {
